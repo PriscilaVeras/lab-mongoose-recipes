@@ -47,6 +47,9 @@ mongoose
     console.log("update recipe!");
 
     const deleteRecipe = await Recipe.deleteOne({ title: "Carrot Cake" });
+    console.log("delete recipe carrot cake!");
+
+    close();
   })
   .catch((error) => {
     console.error("Error connecting to the database", error);
